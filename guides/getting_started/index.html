@@ -126,7 +126,7 @@
 
                                     <p>If you already have the <a href="https://dotnet.microsoft.com/download/dotnet-core">.NET Core 3.1 SDK</a> installed, run the following sequence of command line steps:</p>
 
-<pre v-highlight:js><code>dotnet new -i Ext.NET.Templates  # Install dotnet templates
+<pre v-highlight:shell><code>dotnet new -i Ext.NET.Templates  # Install dotnet templates
 mkdir ExtDemo1                   # Make a new folder
 cd ExtDemo1                      # Move into that new folder
 dotnet new extnet                # Create a new Ext.NET app
@@ -167,33 +167,33 @@ dotnet watch run                 # Start the new web app</code></pre>
                                     <p>We&#39;re making the assumption here that you already have .NET Core installed locally, but if not, download and install <a href="https://dotnet.microsoft.com/download/dotnet-core">.NET Core 3.1 SDK</a> first. The <code>dotnet</code> CLI is installed automatically during that process.</p>
                                     <p>With .NET Core installed on your local machine, open a <strong>Command-Line</strong> or Mac OS <strong>Terminal</strong> window, run the following command to install the Ext.NET Templates:</p>
 
-<pre v-highlight:js><code>dotnet new --install Ext.NET.Templates</code></pre>
+<pre v-highlight:shell><code>dotnet new --install Ext.NET.Templates</code></pre>
                                     <p>Two new project templates will be installed, <code>extnet</code> and <code>extnet-mvc</code>. </p>
                                     <p>The <code>extnet</code> template will create a basic Razor Pages project with Ext.NET installed. The <code>extnet-mvc</code> template creates the same Ext.NET application but with an ASP.NET MVC (Model-View-Controller) project layout. </p>
 
-<pre v-highlight:js><code>Templates                      Short Name    Language    Tags
+<pre v-highlight:shell><code>Templates                      Short Name    Language    Tags
 --------------------------------------------------------------------------------
 Ext.NET MVC Web App            extnet-mvc    [C#]        Ext.NET/Web/MVC
 Ext.NET Razor Pages Web App    extnet        [C#]        Ext.NET/Web/Razor Pages</code></pre>
 
                                     <p>The next step is to create a new folder for your project and move into that folder:</p>
 
-<pre v-highlight:js><code>mkdir Demo1
+<pre v-highlight:shell><code>mkdir Demo1
 cd Demo1</code></pre>
 
                                     <p>With those few simple commands, we&#39;re now ready to create a new Ext.NET web app from our newly installed templates and open the app in a web browser.</p>
 
-<pre v-highlight:js><code>dotnet new extnet
+<pre v-highlight:shell><code>dotnet new extnet
 dotnet watch run</code></pre>
                                     <p>Your new Ext.NET project is now created and the localhost webserver is running.</p>
                                     <p>The above <code>dotnet watch run</code> command will start a local webserver at <a href="http://localhost:5000">http://localhost:5000</a>. You can now view the app in a web browser and your new Ext.NET web app should be working correctly.</p>
                                     <p>To view the new project source code, open the project in Visual Studio, or run the <code>code .</code> command to open with Visual Studio Code. </p>
 
-<pre v-highlight:js><code>code .</code></pre>
+<pre v-highlight:shell><code>code .</code></pre>
 
                                     <p>For creating another new app, just create a new folder somewhere then run one command:</p>
 
-<pre v-highlight:js><code>dotnet new extnet && dotnew watch run</code></pre>
+<pre v-highlight:shell><code>dotnet new extnet && dotnew watch run</code></pre>
 
                                     <p>Within seconds your new Ext.NET project is created and running on a local webserver.</p>
 
@@ -206,15 +206,15 @@ dotnet watch run</code></pre>
 
                                     <p>Do you already have the Ext.NET <code>dotnet</code> tools installed? Upgrading to the latest release of Ext.NET is oh so simple, just run the same command:</p>
 
-<pre v-highlight:js><code>dotnet new --install Ext.NET.Templates</code></pre>
+<pre v-highlight:shell><code>dotnet new --install Ext.NET.Templates</code></pre>
 
                                     <p>The templates can be removed by running the following command:</p>
 
-<pre v-highlight:js><code>dotnet new --uninstall Ext.NET.Templates</code></pre>
+<pre v-highlight:shell><code>dotnet new --uninstall Ext.NET.Templates</code></pre>
 
                                     <p>The version number of your installed <code>dotnet</code> templates can be retrieved using:</p>
 
-<pre v-highlight:js><code>dotnet new -u</code></pre>
+<pre v-highlight:shell><code>dotnet new -u</code></pre>
 
                                     <doc-anchor-target id="install-vsix-visual-studio-extension">
                                         <h2>
@@ -248,7 +248,7 @@ dotnet watch run</code></pre>
 
                                     <p>Install Ext.NET Classic NuGet <a href="https://www.nuget.org/packages/ext.net.classic">package</a> using the NuGet CLI.</p>
 
-<pre v-highlight:js><code>Install-Package Ext.NET.Classic</code></pre>
+<pre v-highlight:shell><code>Install-Package Ext.NET.Classic</code></pre>
 
                                     <doc-anchor-target id="dotnet-cli">
                                         <h3>
@@ -259,7 +259,7 @@ dotnet watch run</code></pre>
 
                                     <p>Install Ext.NET Classic NuGet <a href="https://www.nuget.org/packages/ext.net.classic">package</a> using the dotnet CLI.</p>
 
-<pre v-highlight:js><code>dotnet add package Ext.NET.Classic</code></pre>
+<pre v-highlight:shell><code>dotnet add package Ext.NET.Classic</code></pre>
 
                                     <doc-anchor-target id="project-setup">
                                         <h3>
@@ -345,7 +345,7 @@ namespace Your_Namespace_Here
 }</code></pre>
                                     <p>Your projects <strong>_ViewImports.cshtml</strong> file requires the addition of a few items as well. </p>
 
-<pre v-highlight:js><code>@using Ext.Net
+<pre v-highlight:html><code>@using Ext.Net
 @using Ext.Net.Core
 @using Ext.Net.HtmlHelpers
 @using Ext.Net.HtmlHelpers.Charts
@@ -361,7 +361,7 @@ namespace Your_Namespace_Here
                                     <p>Once installed, you should now have access to all Ext.NET components, the entire Ext.NET API, and Intellisense.</p>
                                     <p>Try adding a simple <code>&lt;ext-button&gt;</code> to a page:</p>
 
-<pre v-highlight:js><code>&lt;ext-button text="Click Me!" handler="Ext.toast('Hello, world')" /&gt;</code></pre>
+<pre v-highlight:html><code>&lt;ext-button text="Click Me!" handler="Ext.toast('Hello, world')" /&gt;</code></pre>
 
                                     <p>Check out the <a href="https://ext.net/download">download</a> page for links to all installation options and previous releases.</p>
 
