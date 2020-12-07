@@ -1,5 +1,5 @@
 var __DOCS_CONFIG__ = {
-    version: "7.1.0",
+    version: "7.2.0",
     searchPlaceholder: "Search docs",
     searchHotkeys: ["/"],
     sidebarFilterPlaceholder: "Filter",
