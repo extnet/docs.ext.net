@@ -1,0 +1,49 @@
+{
+  "input": "src",
+  "output": "docs",
+  "version": "7.1.0",
+  "cname": "docs.ext.net",
+
+  "title": " | Ext.NET Documentation",
+
+  "siteLogo": {
+     "img": "logo.svg",
+     "imgDark": "logo-dark.svg"
+  },
+
+  "links": [
+    {
+      "text": "Download",
+      "link": "https://ext.net/download/"
+    },  
+    {
+      "text": "Pricing",
+      "link": "https://ext.net/pricing/"
+    },
+    {
+      "text": "Examples",
+      "link": "https://examples.ext.net/"
+    },
+    {
+      "text": "Forums",
+      "link": "https://forums.ext.net/"
+    },
+    {
+      "text": "Themes",
+      "link": "https://themes.ext.net/"
+    }  
+  ],
+
+  "nav": [{
+      "path": "/",
+      "icon": "home"
+    }
+  ],
+
+  "colors": {
+    "logoLabel": {
+      "text": "#188973",
+      "background": "#bce8e0"
+    }
+  }
+}

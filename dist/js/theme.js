@@ -1,1 +1,0 @@
-!function(){function e(e){e&&document.documentElement.classList.add(e)}var t=localStorage.getItem("doc_theme");t?e(t):window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches&&e("dark")}();
