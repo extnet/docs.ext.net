@@ -4,11 +4,19 @@
   "version": "7.1.0",
   "cname": "docs.ext.net",
 
-  "title": " | Ext.NET Documentation",
+  "meta": {
+    "title": " | Ext.NET Documentation"
+  },
 
-  "siteLogo": {
-     "img": "logo.svg",
-     "imgDark": "logo-dark.svg"
+  "identity": {
+     "logo": "logo.svg",
+     "logoDark": "logo-dark.svg",
+     "colors": {
+      "label": {
+        "text": "#188973",
+        "background": "#bce8e0"
+      }
+    }
   },
 
   "links": [
@@ -38,12 +46,5 @@
       "path": "/",
       "icon": "home"
     }
-  ],
-
-  "colors": {
-    "logoLabel": {
-      "text": "#188973",
-      "background": "#bce8e0"
-    }
-  }
+  ]
 }
