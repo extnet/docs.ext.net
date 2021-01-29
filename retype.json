@@ -11,6 +11,7 @@
   "identity": {
      "logo": "logo.svg",
      "logoDark": "logo-dark.svg",
+     "label": "Docs",
      "colors": {
       "label": {
         "text": "#188973",
