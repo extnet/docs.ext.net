@@ -9,8 +9,8 @@
   },
 
   "identity": {
-     "logo": "logo.svg",
-     "logoDark": "logo-dark.svg",
+     "logo": "/static/logo.svg",
+     "logoDark": "/static/logo-dark.svg",
      "label": "Docs",
      "colors": {
       "label": {

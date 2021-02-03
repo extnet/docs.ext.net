@@ -3,6 +3,7 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="turbo-cache-control" content="no-cache">
 
     <title>License Key Configuration | Ext.NET Documentation</title>
 
@@ -11,6 +12,9 @@
     <script>(function () { var el = document.documentElement, m = localStorage.getItem("doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
 
     <link href="/resources/css/retype.css" rel="stylesheet" />
+
+    <script type="text/javascript" src="/resources/js/config.js" defer></script>
+    <script type="text/javascript" src="/resources/js/retype.js" defer></script>
 </head>
     <body>
         <div id="docs-app" class="relative text-base antialiased text-gray-700 bg-white font-body dark:bg-dark-850 dark:text-dark-300">
@@ -27,8 +31,8 @@
             <div class="flex items-center px-2 md:px-6 md:w-72">
                 <span class="dark:text-white text-2xl leading-snug font-semibold line-clamp-1 md:line-clamp-2">
                     <a href="/">
-                        <img class="dark:hidden" src="/resources/img/logo.svg">
-                        <img class="hidden dark:block" src="/resources/img/logo-dark.svg">
+                        <img class="dark:hidden" src="/static/logo.svg">
+                        <img class="hidden dark:block" src="/static/logo-dark.svg">
                     </a>
                 </span>
                 <span class="hidden px-2 py-1 ml-4 text-sm font-semibold leading-none text-root-logo-label-text bg-root-logo-label-bg rounded-sm md:inline-block">Docs</span>
@@ -276,8 +280,5 @@
         <div id="docs-overlay-target"></div>
 
         <script>window.__DOCS__ = { "title": "License Key Configuration", icon: "file" }</script>
-
-        <script type="text/javascript" src="/resources/js/config.js"></script>
-        <script type="text/javascript" src="/resources/js/retype.js"></script>
     </body>
 </html>
