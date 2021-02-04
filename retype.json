@@ -51,5 +51,13 @@
 
   "footer": {
     "copyright": "© Copyright 2008-{{ year }}. [Object.NET, Inc.](https://object.net/) All rights reserved."
+  },
+
+  "plugins": {
+    "google": {
+        "analytics": {
+            "id": "G-K0X9B8THVC"
+        }
+    }
   }
 }
