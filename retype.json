@@ -54,10 +54,8 @@
   },
 
   "plugins": {
-    "google": {
-        "analytics": {
-            "id": "G-K0X9B8THVC"
-        }
+    "googleAnalytics": {
+        "id": "G-K0X9B8THVC"
     }
   }
 }

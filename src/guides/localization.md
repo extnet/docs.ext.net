@@ -23,7 +23,7 @@ public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
 }
 ```
 
-2.  _\[Optional\]_ The `UseExtNetLocalization` method accepts a setup action for [RequestLocalizationOptions](https://docs.microsoft.com/en-us/dotnet/api/microsoft.aspnetcore.builder.requestlocalizationoptions) mimicking the signature of the standard [UseRequestLocalization](https://docs.microsoft.com/en-us/dotnet/api/microsoft.aspnetcore.builder.applicationbuilderextensions.userequestlocalization) method. Internally Ext.NET will resolve supported cultures and initialize the corresponding fields in a **RequestLocalizationOptions** instance. Feel free to customize it further, e.g.:
+2.  _[Optional]_ The `UseExtNetLocalization` method accepts a setup action for [RequestLocalizationOptions](https://docs.microsoft.com/en-us/dotnet/api/microsoft.aspnetcore.builder.requestlocalizationoptions) mimicking the signature of the standard [UseRequestLocalization](https://docs.microsoft.com/en-us/dotnet/api/microsoft.aspnetcore.builder.applicationbuilderextensions.userequestlocalization) method. Internally Ext.NET will resolve supported cultures and initialize the corresponding fields in a **RequestLocalizationOptions** instance. Feel free to customize it further, e.g.:
 
 Read more about ASP.NET Core localization [here](https://docs.microsoft.com/en-us/aspnet/core/fundamentals/localization).
 
