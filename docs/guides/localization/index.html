@@ -208,7 +208,8 @@
 <ol>
 <li>Ext.NET localization files are embedded resources, ensure hosting of embedded resources is enabled in <strong>Startup.cs</strong>. Ext.NET localization middleware must be enabled after <code v-pre>app.UseExtNetResources()</code> invocation (not necessarily as the next statement, so feel free to select the best place for it in the request pipeline).</li>
 </ol>
-<pre v-highlight:csharp><code v-pre>public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
+<div class="codeblock-wrapper"><doc-codeblock line-numbers>
+<pre class="language-csharp"><code v-pre class="language-csharp">public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
 {
     // ...
 
@@ -220,11 +221,13 @@
 
     // ...
 }</code></pre>
+</doc-codeblock></div>
 <ol start="2">
 <li><em>[Optional]</em> The <code v-pre>UseExtNetLocalization</code> method accepts a setup action for <a href="https://docs.microsoft.com/en-us/dotnet/api/microsoft.aspnetcore.builder.requestlocalizationoptions">RequestLocalizationOptions</a> mimicking the signature of the standard <a href="https://docs.microsoft.com/en-us/dotnet/api/microsoft.aspnetcore.builder.applicationbuilderextensions.userequestlocalization">UseRequestLocalization</a> method. Internally Ext.NET will resolve supported cultures and initialize the corresponding fields in a <strong>RequestLocalizationOptions</strong> instance. Feel free to customize it further, e.g.:</li>
 </ol>
 <p>Read more about ASP.NET Core localization <a href="https://docs.microsoft.com/en-us/aspnet/core/fundamentals/localization">here</a>.</p>
-<pre v-highlight:csharp><code v-pre>public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
+<div class="codeblock-wrapper"><doc-codeblock line-numbers>
+<pre class="language-csharp"><code v-pre class="language-csharp">public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
 {
     // ...
 
@@ -247,6 +250,7 @@
 
     // ...
 }</code></pre>
+</doc-codeblock></div>
 <p>With the configuration above, <code v-pre>lang</code> query string parameter can be used to control UI Culture:</p>
 <p><img src="https://user-images.githubusercontent.com/16582701/80749758-9fdce880-8b2f-11ea-84e3-2159f3d77238.png" alt="image" /></p>
 <doc-anchor-target id="per-page-locale-configuration">
@@ -268,9 +272,11 @@
         <span>Index.cshtml</span>
     </h4>
 </doc-anchor-target>
-<pre v-highlight:markup><code v-pre>&lt;head&gt;
+<div class="codeblock-wrapper"><doc-codeblock line-numbers>
+<pre class="language-markup"><code v-pre class="language-markup">&lt;head&gt;
     &lt;ext-resourceManager locale=&quot;de&quot; /&gt;
 &lt;/head&gt;</code></pre>
+</doc-codeblock></div>
 <doc-anchor-target id="configuration-using-a-resource-manager-model">
     <h3>
         <doc-anchor-trigger class="header-anchor-trigger" to="#configuration-using-a-resource-manager-model">#</doc-anchor-trigger>
@@ -284,16 +290,19 @@
         <span>Index.cshtml</span>
     </h4>
 </doc-anchor-target>
-<pre v-highlight:markup><code v-pre>&lt;head&gt;
+<div class="codeblock-wrapper"><doc-codeblock line-numbers>
+<pre class="language-markup"><code v-pre class="language-markup">&lt;head&gt;
     &lt;ext-resourceManager model=&quot;Model.ResourceManager&quot; /&gt;
 &lt;/head&gt;</code></pre>
+</doc-codeblock></div>
 <doc-anchor-target id="index-cshtml-cs">
     <h4>
         <doc-anchor-trigger class="header-anchor-trigger" to="#index-cshtml-cs">#</doc-anchor-trigger>
         <span>Index.cshtml.cs</span>
     </h4>
 </doc-anchor-target>
-<pre v-highlight:csharp><code v-pre>using Ext.Net.Core;
+<div class="codeblock-wrapper"><doc-codeblock line-numbers>
+<pre class="language-csharp"><code v-pre class="language-csharp">using Ext.Net.Core;
 
 using Microsoft.AspNetCore.Mvc.RazorPages;
 
@@ -312,6 +321,7 @@ namespace WebApplication1.Pages
         }
     }
 }</code></pre>
+</doc-codeblock></div>
 <p>Any of configurations above will force Ext.NET to use a custom locale configured for that page. Values coming from Culture Providers configured in Localization middleware are ignored in this case (see below, <code v-pre>es</code> query string locale is not applied - <code v-pre>de</code> page locale is used instead).</p>
 <p><img src="https://user-images.githubusercontent.com/16582701/80750137-3c06ef80-8b30-11ea-8a50-4e6b5aaa90a3.png" alt="image" /></p>
 
