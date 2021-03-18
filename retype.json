@@ -1,6 +1,6 @@
 {
-  "input": "src",
-  "output": "docs",
+  "input": "./",
+  "output": "retype",
   "version": "7.1.0",
   "cname": "docs.ext.net",
 
