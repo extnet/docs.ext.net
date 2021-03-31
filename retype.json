@@ -1,6 +1,6 @@
 {
   "input": "./",
-  "output": "retype",
+  "output": ".retype",
   "version": "7.1.0",
   "cname": "docs.ext.net",
 
@@ -8,7 +8,7 @@
     "title": " | Ext.NET Documentation"
   },
 
-  "identity": {
+  "branding": {
      "logo": "/static/logo.svg",
      "logoDark": "/static/logo-dark.svg",
      "label": "Docs",
@@ -24,7 +24,7 @@
     {
       "text": "Download",
       "link": "https://ext.net/download/"
-    },  
+    },
     {
       "text": "Pricing",
       "link": "https://ext.net/pricing/"
@@ -40,7 +40,7 @@
     {
       "text": "Themes",
       "link": "https://themes.ext.net/"
-    }  
+    }
   ],
 
   "nav": [{
