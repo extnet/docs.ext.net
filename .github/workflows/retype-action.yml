@@ -14,12 +14,8 @@ jobs:
     steps:
       - uses: actions/checkout@v2
 
-      - uses: actions/setup-dotnet@v1
-        with:
-          dotnet-version: 5.0.x
+      - uses: retypeapp/action-build@v2.0.0-preview
 
-      - uses: fabriciomurta/ragha-build@v1.3.0
-
-      - uses: fabriciomurta/ragha-github@v1.3.0
+      - uses: retypeapp/action-github-pages@v2.0.0-preview
         with:
           update-branch: true
