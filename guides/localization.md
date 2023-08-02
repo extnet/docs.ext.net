@@ -1,3 +1,6 @@
+---
+icon: globe
+---
 # Localization
 
 Localization makes UI components more friendly by talking with users in language they speak.

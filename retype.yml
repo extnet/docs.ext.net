@@ -1,0 +1,36 @@
+input: .
+output: .retype
+
+url: docs.ext.net
+
+branding:
+  label: Docs
+  logo: /static/logo.svg
+  logoDark: /static/logo-dark.svg
+
+meta:
+  title: " | Ext.NET Documentation"
+
+links:
+  - text: Download
+    link: https://ext.net/download/
+    icon: download
+
+  - text: Pricing
+    link: https://ext.net/pricing/
+    icon: credit-card
+
+  - text: Examples
+    link: https://examples.ext.net/
+    icon: code
+
+  - text: Forums
+    link: https://forums.ext.net/
+    icon: comment-discussion
+
+footer:
+  copyright: "&copy; Copyright 2008-{{ year }}. [Object.NET, Inc.](https://object.net/) All rights reserved."
+
+plugins:
+  googleAnalytics:
+   id: G-K0X9B8THVC

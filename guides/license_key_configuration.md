@@ -1,3 +1,6 @@
+---
+icon: gear
+---
 # License Key Configuration
 
 An Ext.NET license key can be purchased online at [ext.net/pricing](https://ext.net/pricing).

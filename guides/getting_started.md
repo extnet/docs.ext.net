@@ -1,8 +1,11 @@
+---
+icon: rocket
+---
 # Getting Started
 
 ## Quick start
 
-If you already have the [.NET Core SDK](https://dotnet.microsoft.com/download/dotnet-core) version 3.1 or 5.0+ installed, run the following sequence of command line steps:
+If you already have the [.NET SDK](https://dotnet.microsoft.com/en-us/download/dotnet) installed, run the following sequence of command line steps:
 
 ```sh
 dotnet new -i Ext.NET.Templates  # Install dotnet templates

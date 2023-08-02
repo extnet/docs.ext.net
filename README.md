@@ -1,5 +1,6 @@
 ---
 title: Home
+icon: home
 ---
 # Ext.NET Docs Home
 

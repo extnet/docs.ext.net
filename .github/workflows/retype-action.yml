@@ -1,4 +1,4 @@
-name: Publish Retype generated website to GitHub Pages
+name: Publish Retype powered website to GitHub Pages
 on:
   workflow_dispatch:
   push:
@@ -7,7 +7,7 @@ on:
 
 jobs:
   publish:
-    name: Publish to retype branch.
+    name: Publish to retype branch
 
     runs-on: ubuntu-latest
 
