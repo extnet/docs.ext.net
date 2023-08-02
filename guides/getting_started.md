@@ -17,10 +17,6 @@ dotnet watch run                 # Start the new web app
 
 Within seconds, your new app should be available at [http://localhost:5000](http://localhost:5000/).
 
-Here's a [Getting Started](https://youtu.be/0J1n_wyvQoU) video demonstrating how to install the Ext.NET Template and create a new web app using the above commands.
-
-<doc-embed src="https://www.youtube.com/embed/0J1n_wyvQoU"></doc-embed>
-
 ## Installation options
 
 There are several options for quickly creating new Ext.NET Classic projects by using Templates, the Visual Studio Extension, or adding Ext.NET to your project using NuGet packages.
@@ -35,9 +31,9 @@ We'll run through each of these setup techniques, although which to choose will 
 
 With multi-platform support, including Windows and Mac OS, the `dotnet` CLI is a handy collection of tools for creating, compiling, running, and publishing .NET applications. With one simple command, Ext.NET can be installed into that toolbox.
 
-We're making the assumption here that you already have .NET Core installed locally, but if not, download and install [.NET Core 3.1 SDK](https://dotnet.microsoft.com/download/dotnet-core) first. The `dotnet` CLI is installed automatically during that process.
+We're making the assumption here that you already have .NET installed locally, but if not, download and install the [.NET SDK](https://dotnet.microsoft.com/download/dotnet-core) first. The `dotnet` CLI is installed automatically during that process.
 
-With .NET Core installed on your local machine, open a **Command-Line** or Mac OS **Terminal** window, run the following command to install the Ext.NET Templates:
+With .NET installed on your local machine, open a **Command-Line** or Mac OS **Terminal** window, run the following command to install the Ext.NET Templates:
 
 ```sh
 dotnet new --install Ext.NET.Templates
@@ -142,7 +138,7 @@ dotnet add package Ext.NET.Classic
 
 ### Project setup
 
-Within your ASP.NET Core web project, a few configuration options must be included.
+Within your ASP.NET web project, a few configuration options must be included.
 
 After installing the **Ext.NET.Classic** package using NuGet or the `dotnet` CLI, please add the following individual `Ext.Net` related configurations within your projects **Startup.cs** file:
 
@@ -221,7 +217,9 @@ namespace Your_Namespace_Here
 }
 ```
 
-<doc-alert>Additional details for configuring `app.UseExtNetLocalization()` are available in the [Localization](../localization) guide.</doc-alert>
+!!!
+Additional details for configuring `app.UseExtNetLocalization()` are available in the [Localization](localization.md) guide.
+!!!
 
 Your projects **\_ViewImports.cshtml** file requires the addition of a few items as well.
 
@@ -248,4 +246,4 @@ Try adding a simple `<ext-button>` to a page:
 <ext-button text="Click Me!" handler="Ext.toast('Hello, world')" />
 ```
 
-Check out the [download](https://ext.net/download) page for links to all installation options and previous releases.
+Check out the [download](https://ext.net/download/) page for links to all installation options and previous releases.

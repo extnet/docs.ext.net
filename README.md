@@ -4,10 +4,18 @@ icon: home
 ---
 # Ext.NET Docs Home
 
-Check out the [Getting Started](guides/getting_started/) guide and have a new Ext.NET web application up and running within seconds.
+Check out the [Getting Started](/guides/getting_started.md) guide and have a new Ext.NET web application up and running within seconds.
 
-1. [Getting Started](guides/getting_started)
-1. [License Key Configuration](guides/license_key_configuration)
-1. [Localization](guides/localization)
+- [x] [Getting Started](/guides/getting_started.md)
+- [x] [License Key Configuration](/guides/license_key_configuration.md)
+- [x] [Localization](/guides/localization.md)
 
-<doc-embed src="https://www.youtube.com/embed/0J1n_wyvQoU"></doc-embed>
+### Latest Release
+
+Version | [Ext.NET v7.4.0](https://ext.net/download/)
+-- | --
+Release Date | 2023-07-26
+.NET Support | .NET 7, .NET 6, and .NET 5
+CPU | 64 bit
+IDE | Visual Studio 2022, 2019 (Win & Mac)<br>Visual Studio Code (Win & Mac)<br>`dotnet` CLI (Win & Mac)
+Examples | [Example Explorer](https://examples.ext.net/)

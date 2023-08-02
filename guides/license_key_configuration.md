@@ -7,11 +7,13 @@ An Ext.NET license key can be purchased online at [ext.net/pricing](https://ext.
 
 A license key is required to run your Ext.NET app on any location other than your local development machine.
 
-Once a license key has been purchased, you will be sent an email with a key included. To add the license key to your Ext.NET Classic project, two easy steps are required:
+Once a license key has been purchased, you will be sent an email with a key included.
 
-:::danger Please protect your license key
+To add the license key to your Ext.NET Classic project, two easy steps are required:
+
+!!!danger Please protect your license key
 Please do not commit your Ext.NET license key to a public source code repository or share anywhere outside of your organization. It is your responsibility to protect your license key.
-:::
+!!!
 
 ## Two steps to unlock
 
@@ -59,4 +61,4 @@ Within your projects **.csproj** file, add the following section inside the `<Pr
 
 The above section instructs the build process to copy the **appsettings.json** to your `/bin` folder during compilation. Your **appsettings.json** file should be deployed along side your projects compiled **.dll** files.
 
-Your Ext.NET project should now run on any server.
+Your Ext.NET project should now run on any web server.

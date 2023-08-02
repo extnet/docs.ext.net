@@ -5,7 +5,9 @@ icon: globe
 
 Localization makes UI components more friendly by talking with users in language they speak.
 
-<doc-alert>Be sure to review the [Getting Started](../getting_started) guide for details on how to setup a new project and tips on **Startup.cs** configuration.</doc-alert>
+!!!
+Be sure to review the [Getting Started](getting_started.md) guide for details on how to setup a new project and tips on **Startup.cs** configuration.
+!!!
 
 ## Configuration
 
@@ -26,9 +28,9 @@ public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
 }
 ```
 
-2.  _[Optional]_ The `UseExtNetLocalization` method accepts a setup action for [RequestLocalizationOptions](https://docs.microsoft.com/en-us/dotnet/api/microsoft.aspnetcore.builder.requestlocalizationoptions) mimicking the signature of the standard [UseRequestLocalization](https://docs.microsoft.com/en-us/dotnet/api/microsoft.aspnetcore.builder.applicationbuilderextensions.userequestlocalization) method. Internally Ext.NET will resolve supported cultures and initialize the corresponding fields in a **RequestLocalizationOptions** instance. Feel free to customize it further, e.g.:
+2.  [!badge Optional] The `UseExtNetLocalization` method accepts a setup action for [RequestLocalizationOptions](https://docs.microsoft.com/en-us/dotnet/api/microsoft.aspnetcore.builder.requestlocalizationoptions) mimicking the signature of the standard [UseRequestLocalization](https://docs.microsoft.com/en-us/dotnet/api/microsoft.aspnetcore.builder.applicationbuilderextensions.userequestlocalization) method. Internally Ext.NET will resolve supported cultures and initialize the corresponding fields in a **RequestLocalizationOptions** instance. Feel free to customize it further, e.g.:
 
-Read more about ASP.NET Core localization [here](https://docs.microsoft.com/en-us/aspnet/core/fundamentals/localization).
+Read more about ASP.NET localization [here](https://docs.microsoft.com/en-us/aspnet/core/fundamentals/localization).
 
 ```cs
 public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
@@ -56,15 +58,15 @@ public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
 }
 ```
 
-With the configuration above, `lang` query string parameter can be used to control UI Culture:
+With the configuration above, the `lang` query string parameter can be used to control UI Culture:
 
-![image](https://user-images.githubusercontent.com/16582701/80749758-9fdce880-8b2f-11ea-84e3-2159f3d77238.png)
+![](/static/lang-param-sample.png)
 
 ### Per-page locale configuration
 
-Ext.NET uses [CultureInfo.CurrentUICulture](https://docs.microsoft.com/ru-ru/dotnet/api/system.globalization.cultureinfo.currentuiculture) for configuring UI components locale. However, UI Culture can be overridden using `ExtResourceManager.Locale` property.
+Ext.NET uses the [CultureInfo.CurrentUICulture](https://docs.microsoft.com/ru-ru/dotnet/api/system.globalization.cultureinfo.currentuiculture) for configuring UI components locale. However, UI Culture can be overridden using the `ExtResourceManager.Locale` property.
 
-### Configuration using a Tag Helper
+### Configuration using Tag Helper
 
 #### Index.cshtml
 
@@ -112,4 +114,4 @@ namespace WebApplication1.Pages
 
 Any of configurations above will force Ext.NET to use a custom locale configured for that page. Values coming from Culture Providers configured in Localization middleware are ignored in this case (see below, `es` query string locale is not applied - `de` page locale is used instead).
 
-![image](https://user-images.githubusercontent.com/16582701/80750137-3c06ef80-8b30-11ea-8a50-4e6b5aaa90a3.png)
+![](/static/localization-sample.png)

@@ -1,6 +1,8 @@
 input: .
 output: .retype
 
+poweredByRetype: true
+
 url: docs.ext.net
 
 branding:
@@ -10,6 +12,9 @@ branding:
 
 meta:
   title: " | Ext.NET Documentation"
+
+generator:
+  paths: root
 
 links:
   - text: Download
@@ -30,6 +35,9 @@ links:
 
 footer:
   copyright: "&copy; Copyright 2008-{{ year }}. [Object.NET, Inc.](https://object.net/) All rights reserved."
+
+edit:
+  repo: github.com/extnet/docs.ext.net
 
 plugins:
   googleAnalytics:
